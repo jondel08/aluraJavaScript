@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +14,27 @@
     <link rel="icon" type="image/png" href="images/bateria.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-    
+
+    <!-- <script src="main.js"></script> -->
+
 </head>
+
 <body>
 
     <h1>Alura Midi</h1>
 
     <section class="teclado">
-        <button class="tecla tecla_pom">Pom</button>
-        <button class="tecla tecla_clap">Clap</button>
-        <button class="tecla tecla_tim">Tim</button>
+        <button class="tecla tecla_pom" onclick="playSound('tecla_pom')">Pom</button>
+        <button class="tecla tecla_clap" onclick="playSound('tecla_clap')">Clap</button>
+        <button class="tecla tecla_tim" onclick="playSound('tecla_tim')">Tim</button>
 
-        <button class="tecla tecla_puff">Puff</button>
-        <button class="tecla tecla_splash">Splash</button>
-        <button class="tecla tecla_toim">Toim</button>
+        <button class="tecla tecla_puff" onclick="playSound('tecla_puff')">Puff</button>
+        <button class="tecla tecla_splash" onclick="playSound('tecla_splash')">Splash</button>
+        <button class="tecla tecla_toim" onclick="playSound('tecla_toim')">Toim</button>
 
-        <button class="tecla tecla_psh">Psh</button>
-        <button class="tecla tecla_tic">Tic</button>
-        <button class="tecla tecla_tom">Tom</button>
+        <button class="tecla tecla_psh" onclick="playSound('tecla_psh')">Psh</button>
+        <button class=" tecla tecla_tic" onclick="playSound('tecla_tic')">Tic</button>
+        <button class=" tecla tecla_tom" onclick="playSound('tecla_tom')">Tom</button>
     </section>
 
     <audio src="sounds/keyq.wav" id="sonido_tecla_pom"></audio>
@@ -42,7 +46,8 @@
     <audio src="sounds/keyz.wav" id="sonido_tecla_psh"></audio>
     <audio src="sounds/keyx.wav" id="sonido_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="sonido_tecla_tom"></audio>
-    
-    
+
+    <script src="main.js"></script>
 </body>
+
 </html>
